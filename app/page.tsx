@@ -33,7 +33,7 @@ export default function Home() {
       </header>
 
       {/* SMILEY */}
-      <div className="smiley">🙂</div>
+      <div className="smiley" aria-hidden="true">🙂</div>
 
       {/* SPEECH */}
       <div className="speech">
@@ -66,14 +66,16 @@ export default function Home() {
         {/* INPUT */}
         <div className="input-row">
           <div className="input-box">
-            <div className="input-icon">🌐</div>
+            <div className="input-icon" aria-hidden="true">🌐</div>
 
             <input
               type="text"
               placeholder="Paste any URL (e.g. https://stripe.com)"
             />
 
-            <div className="copy-icon">⧉</div>
+            <button type="button" className="copy-icon" aria-label="Copy URL">
+              <span aria-hidden="true">⧉</span>
+            </button>
           </div>
 
           <button className="brutal-btn">
@@ -152,13 +154,13 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="footer">
-        <div>⚡ 100% FREE</div>
+        <div aria-hidden="true">⚡ 100% FREE</div>
 
-        <div>🛡 NO SIGN UP</div>
+        <div aria-hidden="true">🛡 NO SIGN UP</div>
 
-        <div>🙂 NO LIMITS</div>
+        <div aria-hidden="true">🙂 NO LIMITS</div>
 
-        <div>✳ JUST BRUTAL</div>
+        <div aria-hidden="true">✳ JUST BRUTAL</div>
 
         <div className="footer-right">
           Made for designers,
