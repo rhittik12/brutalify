@@ -1,65 +1,171 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <main className="page">
+      <div className="blue-shape" />
+
+      <div className="left-triangle" />
+
+      <div className="grid-bg" />
+
+      <div className="pink-star" />
+
+      {/* HEADER */}
+      <header className="header">
+        <div>
+          <h1 className="logo">
+            BRUTAL<span>.</span>STYLE
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+
+          <div className="tag">
+            MAKE THE INTERNET UGLY AGAIN.
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+
+        <div className="header-buttons">
+          <button className="sign-btn">
+            SIGN IN ↪
+          </button>
+
+          <button className="start-btn">
+            GET STARTED →
+          </button>
+        </div>
+      </header>
+
+      {/* SMILEY */}
+      <div className="smiley">🙂</div>
+
+      {/* SPEECH */}
+      <div className="speech">
+        <p>
+          NO DESIGN
+          <br />
+          RULES.
+          <br />
+          JUST <span>RAW.</span>
+        </p>
+      </div>
+
+      {/* HERO */}
+      <section className="hero">
+        <h1>
+          TURN ANY
+          <br />
+          WEBSITE INTO
+          <br />
+          <span>BRUTAL</span> ART.
+        </h1>
+
+        <p className="description">
+          We’ll strip the polish, remove the fluff,
+          <br />
+          and rebuild any website in{" "}
+          <mark>brutal raw design.</mark>
+        </p>
+
+        {/* INPUT */}
+        <div className="input-row">
+          <div className="input-box">
+            <div className="input-icon">🌐</div>
+
+            <input
+              type="text"
+              placeholder="Paste any URL (e.g. https://stripe.com)"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+            <div className="copy-icon">⧉</div>
+          </div>
+
+          <button className="brutal-btn">
+            BRUTALIZE IT →
+          </button>
         </div>
-      </main>
-    </div>
+
+        <div className="free-text">
+          ↘ It’s <span>free.</span> No sign up.
+        </div>
+      </section>
+
+      {/* EXAMPLES */}
+      <section className="examples">
+        <div className="example-label">
+          DESIGN EXAMPLES ↗
+        </div>
+
+        <div className="cards">
+          {/* CARD */}
+          <div className="card purple">
+            <div className="card-content">
+              <h3>Stripe ✔</h3>
+
+              <p>Clean • Modern • Fintech</p>
+
+              <button>View Example →</button>
+            </div>
+
+            <div className="preview stripe-preview">
+              stripe
+            </div>
+          </div>
+
+          {/* CARD */}
+          <div className="card peach">
+            <div className="card-content">
+              <h3>Netflix N</h3>
+
+              <p>Streaming • Bold • Dark</p>
+
+              <button>View Example →</button>
+            </div>
+
+            <div className="preview netflix-preview">
+              NETFLIX
+            </div>
+          </div>
+
+          {/* CARD */}
+          <div className="card green">
+            <div className="card-content">
+              <h3>Notion ▣</h3>
+
+              <p>Productivity • Clean • Minimal</p>
+
+              <button>View Example →</button>
+            </div>
+
+            <div className="preview notion-preview">
+              Write, plan,
+              <br />
+              organize.
+            </div>
+          </div>
+        </div>
+
+        <button className="nav-btn nav-left">
+          ‹
+        </button>
+
+        <button className="nav-btn nav-right">
+          ›
+        </button>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        <div>⚡ 100% FREE</div>
+
+        <div>🛡 NO SIGN UP</div>
+
+        <div>🙂 NO LIMITS</div>
+
+        <div>✳ JUST BRUTAL</div>
+
+        <div className="footer-right">
+          Made for designers,
+          <br />
+          by a designer. ↗
+        </div>
+      </footer>
+    </main>
   );
 }
